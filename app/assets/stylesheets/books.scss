@@ -13,7 +13,7 @@ text {
 }
 body {margin:25px;}
 div.polaroid {
-  width: 25%;
+  width: 50%;
   height: auto;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -44,10 +44,15 @@ div.polaroid {
   color: white;
   font-size: 8px;
   font-family: $font;
-  position: relative;
+  position: absolute;
   overflow: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.book-show {
+  height: 475px;
+  width: 325px;
 }
