@@ -26,7 +26,6 @@ div.polaroid {
 }
 .overlay {
   position: absolute;
-  bottom: 25%;
   left: 0;
   right: 0;
   background-color: #333;
@@ -43,10 +42,10 @@ div.polaroid {
 .text {
   white-space: nowrap;
   color: white;
-  font-size: 20px;
+  font-size: 8px;
   font-family: $font;
-  position: absolute;
-  overflow: hidden;
+  position: relative;
+  overflow: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

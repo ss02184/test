@@ -11,8 +11,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="Erb File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -146,7 +146,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576092957637</updated>
-      <workItem from="1576092959500" duration="22096000" />
+      <workItem from="1576092959500" duration="27830000" />
+      <workItem from="1576121744629" duration="677000" />
     </task>
     <servers />
   </component>
@@ -158,13 +159,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MyRails@Development__MyRails.rcov" NAME="Development: MyRails Coverage Results" MODIFIED="1576113012578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MyRails" />
+    <SUITE FILE_PATH="coverage/MyRails@Development__MyRails.rcov" NAME="Development: MyRails Coverage Results" MODIFIED="1576179426382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MyRails" />
   </component>
 </project>
