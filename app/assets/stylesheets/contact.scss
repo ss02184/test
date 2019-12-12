@@ -1,0 +1,46 @@
+// Place all the styles related to the Contact controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "navbar";
+@import "footer";
+@import "header";
+
+body {
+  box-sizing: border-box;
+}
+
+form label, form input {
+  display: block;
+  margin: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: both;
+}
+
+form input[type=submit] {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type=submit]:hover {
+  background-color: #111;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
