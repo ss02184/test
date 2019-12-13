@@ -34,7 +34,9 @@
     <%= render @book.reviews[0..2]%>
       <div>
         <% if user_signed_in? %>
-        <%= link_to 'Add Review', new_book_review_path(@book), class: "btn-custom" %>
+          <%= link_to 'Add Review', new_book_review_path(@book), class: "btn-custom" %>
+        <% else %>
+          <p class="book-desc">Please sign in to add a review.</p>
       <%end %>
     </div>
     </div>

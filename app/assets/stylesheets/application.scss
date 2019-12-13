@@ -20,15 +20,25 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap');
 $font: 'IBM Plex Serif', serif;
 $color: seashell;
+html{ height:100%; }
+body{ min-height:100%; padding:10px; margin:10px; position:relative; }
+
+body::after{ content:''; display:block; height:100px; }
+
+footer{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:100px;
+}
 
 body {
   font-family: $font;
   background-color: $color;
-  margin: 10px;
-  padding: 10px;
 }
 p.alert, p.notice {
   margin: 0;
+  font-family: $font;
 }
 
 @mixin background-tile {
