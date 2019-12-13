@@ -1,7 +1,6 @@
 <div class="review">
   <div class="review-rating" data-score="<%= review.rating %>"></div>
   <p class="review-comment"><%= review.comment %></p>
-  <div class="review-comment" datatype="<%= current_user.id %>"></div>
 
   <% if user_signed_in? %>
     <% if review.user_id == current_user.id %>
