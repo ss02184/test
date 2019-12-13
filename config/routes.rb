@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
-  devise_for :users
-  resources :books
   #Resource paths
+  devise_for :users
+  resources :books do
+    resources :reviews
+  end
 
   #contact pages
   get '/contact', to: 'contact#contact'
