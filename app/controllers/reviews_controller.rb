@@ -11,6 +11,7 @@ class ReviewsController < ApplicationController
     @review = Review.new(param_requirements)
     @review.book_id = @book.id
     @review.user_id = current_user.id
+    @review.name
 
     respond_to do |format|
       if @review.save
@@ -46,7 +47,7 @@ class ReviewsController < ApplicationController
   private
 
     def param_requirements
-      params.require(:review).permit(:rating, :comment)
+      params.require(:review).permit(:rating, :comment, :name)
     end
 
     def find_book
