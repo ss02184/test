@@ -85,16 +85,6 @@ div.polaroid {
 
 }
 
-.book-links {
-
-  .btn-custom {
-    padding: 3px 10px;
-    font-weight: 300;
-    margin-top: 40px;
-  }
-
-}
-
 .book {
   height: 350px;
   width: 250px;
@@ -145,15 +135,9 @@ div.polaroid {
 
 }
 
-
-/* current-category styles */
-
 .current-category {
   margin-bottom: 40px;
 }
-
-
-/* Reviews styles */
 
 .reviews {
 
@@ -184,8 +168,6 @@ div.polaroid {
 
 }
 
-/* New Book Form styles */
-
 .new-book-form {
   @include background-tile;
 
@@ -202,9 +184,6 @@ div.polaroid {
   }
 
 }
-
-
-/* Edit Book Form styles */
 
 .edit-book-form {
 
@@ -226,7 +205,7 @@ div.polaroid {
 
 /* New/Edit review form styles */
 
-.new-review-form, .edit-review-form {
+.new-review-form {
   @include background-tile;
 
   h1 {

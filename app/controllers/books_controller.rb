@@ -1,5 +1,6 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
+  before_action :set_category, only: [:edit, :new, :update, :create]
   # GET /books
   # GET /books.json
   def index
@@ -24,12 +25,10 @@ class BooksController < ApplicationController
   # GET /books/new
   def new
     @book = current_user.books.build
-    @categories = Category.all.map{ |i| [i.name, i.id]}
   end
 
   # GET /books/1/edit
   def edit
-    @categories = Category.all.map{ |i| [i.name, i.id]}
   end
 
   # POST /books
@@ -82,5 +81,10 @@ class BooksController < ApplicationController
   def book_params
     params.require(:book).permit(:title, :description, :author, :category_id, :img)
   end
+
+  def set_category
+    @categories = Category.all.map{ |i| [i.name, i.id]}
+  end
+
 end
 

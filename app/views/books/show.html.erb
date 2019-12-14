@@ -4,9 +4,8 @@
   <div class="col-md-4" style="bottom: 18px">
 
       <div class="polaroid" style="width: 200px; height: auto">
-        <%= image_tag(@book.img, class: "book-show") %>
+        <%=image_tag(@book.img, class: "book-show") %>
       </div>
-
         <div class="links btn-group" style="left: 55px; top: 20px">
           <%= link_to 'Back', books_path, class: "btn-custom" %>
           <% if user_signed_in? %>

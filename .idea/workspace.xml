@@ -148,7 +148,7 @@
       <updated>1576092957637</updated>
       <workItem from="1576092959500" duration="27830000" />
       <workItem from="1576121744629" duration="14975000" />
-      <workItem from="1576203700962" duration="18993000" />
+      <workItem from="1576203700962" duration="25769000" />
     </task>
     <servers />
   </component>
@@ -169,6 +169,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MyRails@Development__MyRails.rcov" NAME="Development: MyRails Coverage Results" MODIFIED="1576211171916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MyRails" />
+    <SUITE FILE_PATH="coverage/MyRails@test__MyRails.rcov" NAME="test: MyRails Coverage Results" MODIFIED="1576281838324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MyRails" />
+    <SUITE FILE_PATH="coverage/MyRails@Development__MyRails.rcov" NAME="Development: MyRails Coverage Results" MODIFIED="1576283505787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MyRails" />
   </component>
 </project>
