@@ -12,7 +12,6 @@ class ReviewsController < ApplicationController
     @review.book_id = @book.id
     @review.user_id = current_user.id
     @review.name
-    @review.user_email = current_user.email
 
     respond_to do |format|
       if @review.save

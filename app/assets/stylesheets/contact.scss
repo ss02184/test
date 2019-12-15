@@ -4,6 +4,8 @@
 @import "navbar";
 @import "footer";
 @import "header";
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap');
+$font: 'IBM Plex Serif', serif;
 
 body {
   box-sizing: border-box;
