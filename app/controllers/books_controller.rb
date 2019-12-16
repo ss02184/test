@@ -55,7 +55,7 @@ class BooksController < ApplicationController
         format.html { redirect_to @book, notice: 'Book was successfully updated.' }
         format.json { render :show, status: :ok, location: @book }
       else
-        format.html { render :edit }
+        format.html { redirect_to @book, notice: 'Book was not successfully updated' }
         format.json { render json: @book.errors, status: :unprocessable_entity }
       end
     end

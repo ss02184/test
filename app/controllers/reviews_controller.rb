@@ -2,6 +2,10 @@ class ReviewsController < ApplicationController
   before_action :find_book
   before_action :find_review, only: [:edit, :update, :destroy]
 
+  def index
+    @review = Review.all
+  end
+
   def new
     @review = Review.new
 
@@ -32,14 +36,14 @@ class ReviewsController < ApplicationController
     if @review.update(param_requirements)
       redirect_to book_path(@book)
     else
-      render 'edit'
+      redirect_to root_path
     end
   end
 
   def destroy
     @review.destroy
     respond_to do |format|
-      format.html { redirect_to @book, notice: 'Review was successfully destroyed.' }
+      format.html { redirect_to root_path , notice: 'Review was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -47,7 +51,7 @@ class ReviewsController < ApplicationController
   private
 
     def param_requirements
-      params.require(:review).permit(:rating, :comment, :name, :user_email)
+      params.require(:review).permit(:rating, :comment, :name)
     end
 
     def find_book

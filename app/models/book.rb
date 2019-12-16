@@ -3,7 +3,11 @@ class Book < ApplicationRecord
   belongs_to :category
   has_many :reviews
   has_one_attached :img
-  validates_presence_of :title, :description, :author, :user_id
+  validates_presence_of :title, :author, :description
+  validates_uniqueness_of :title
+  attribute :title, :validate => true
+  attribute :author, :validate => true
+  attribute :description, :validate => true
 
   after_commit :add_default_cover, on: [:create, :update]
   private def add_default_cover
