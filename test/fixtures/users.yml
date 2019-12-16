@@ -5,9 +5,9 @@
 # below each fixture, per the syntax in the comments below
 #
 one:
-  email: info@mynotes.com
+  email: John@example.com
 # column: value
 #
 two:
-  email: info2@mynotes.com
+  email: Max@example.com
 # column: value

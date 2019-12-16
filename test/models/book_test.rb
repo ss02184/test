@@ -47,7 +47,3 @@ class BookTest < ActiveSupport::TestCase
     assert_not Book.new(title: "1984", description: "Very scary book").save
   end
 end
-
-  test "should belong to category" do
-
-  end
