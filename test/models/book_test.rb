@@ -2,6 +2,11 @@ require 'test_helper'
 
 class BookTest < ActiveSupport::TestCase
 
+  def setup
+    @category = categories(:one)
+  end
+
+
   test "empty form" do
     book = Book.new
     book.save

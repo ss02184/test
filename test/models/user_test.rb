@@ -18,4 +18,19 @@ class UserTest < ActiveSupport::TestCase
     assert user.save
   end
 
+  test "missing password" do
+    user = User.new(email: "emails@gmail.com")
+    assert_not user.save
+  end
+
+  test "missing email" do
+    user = User.new(encrypted_password: "emailaddress", password: 'MMMMMMMMan')
+    assert_not user.save
+  end
+
+  test 'recent' do
+    assert_includes User.recent, users(:one)
+    refute_includes User.recent, users(:two)
+  end
+
 end

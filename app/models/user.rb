@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :books
   has_many :reviews
+  scope :recent, -> { where('created_at > ?', 1.week.ago)}
 end

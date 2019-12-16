@@ -5,6 +5,7 @@ one:
   author: MyString
   description: MyString
   user: one
+  category: one
 
 two:
   title: MyString1

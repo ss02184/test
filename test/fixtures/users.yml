@@ -10,4 +10,5 @@ one:
 #
 two:
   email: Max@example.com
+  created_at: <%= 2.weeks.ago %>
 # column: value
